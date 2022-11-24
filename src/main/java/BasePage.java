@@ -38,6 +38,7 @@ public class BasePage {
     }
 
     public SearchResultsPage clickSearchIcon() {
+        assert searchIkonica.isDisplayed() : "Search icon is NOT present";
         searchIkonica.click();
         return new SearchResultsPage(driver);
     }
